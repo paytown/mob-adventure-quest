@@ -1,4 +1,31 @@
-        
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    
+    background-image: url(./assets/indexbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 8em;
+    margin-bottom: -10px;
+    top: -30px;
+    position: relative;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
 .quest-link {
     display: block;
     text-transform: capitalize;
@@ -6,4 +33,102 @@
 
 #image{
     height: 300px;
+}
+
+
+/* STYLING INDEX */
+
+.index {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.character-information {
+    align-self: center;
+    display: flex;
+    padding: 50px;
+    /* width: 80%; */
+    /* margin: 20%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.85);
+
+    border-radius: 20px;
+}
+
+.character-radio-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 30px 0;
+}
+
+.input-text {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    width: 300px;
+    height: 30px;
+    
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    padding: 0 5px 0 5px;
+    font-size: .8em;
+    text-align: center;
+    margin: 10px 0 30px 0;
+    
+    position: relative;
+    top: 2px;
+}
+
+button {
+    padding: 6px;
+    text-transform: uppercase;
+    /* margin: 30px auto 30px auto; */
+    
+    display: block;
+    border: 2px solid #999;
+    background: #fff;
+    font-size: .8em;
+    outline: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.radio {
+    margin-right: 5px;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    
+    position: relative;
+    top: 2px;
+}
+
+input:checked {
+    border: 6px solid black;
 }

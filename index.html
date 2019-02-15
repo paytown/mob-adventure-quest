@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|UnifrakturCook:700" rel="stylesheet">
     <title>Main Page</title>
 </head>
 <body>
 
-    <header>
-        <h1></h1>
-    </header>
-
-    <main>
-
+    
+    <main class="index">
+        
         <form id="form">
-            <label>
-                Name: <input type="text" name="name" id="name">
-            </label>
-
-            <fieldset>
-                <legend>Character</legend>
             
-                <label>
-                    <input type="radio" name="class" id="class" value="a wizard">Wizard
-                </label>
-                <label>
-                    <input type="radio" name="class" id="class" value="an elf">Elf
-                </label>
-                <label>
-                    <input type="radio" name="class" id="class" value="a troll">Troll
-                </label>
-            
-            </fieldset>
+            <div class="character-information">
+                <h1>Start your quest!</h1>
 
-            <button id="submit">SUBMIT</button>
+                    <h3>Name</h3> 
+                    <label>
+                        <input type="text" name="name" id="name" class="input-text">
+                    </label>
+                
+                    <h3>Character</h3>
+                    
+                    <div class="character-radio-buttons">
+                        <label>
+                        <input type="radio" name="class" id="class" value="a wizard" class="radio">Wizard
+                    </label>
+                    <label>
+                        <input type="radio" name="class" id="class" value="an elf" class="radio">Elf
+                    </label>
+                    <label>
+                        <input type="radio" name="class" id="class" value="a troll" class="radio">Troll
+                    </label>
+                    </div>
+                
+                <button id="submit">SUBMIT</button>
+
+            </div>
+                
+
         </form>
 
     </main>
