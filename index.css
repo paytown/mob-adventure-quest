@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: #fff;
 }
 
 h1 {
@@ -44,6 +45,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    /* background: yellow; */
 }
 
 .character-information {
@@ -55,9 +57,10 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.85);
+    /* background: rgba(255,255,255,0.85); */
 
     border-radius: 20px;
+    /* border: 3px blue solid; */
 }
 
 .character-radio-buttons {
@@ -71,19 +74,35 @@ h3 {
     -moz-appearance: none;
     appearance: none;
     
-    width: 300px;
+    width: 200px;
     height: 30px;
     
-    border: 2px solid #999;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
     transition: 0.2s all linear;
     outline: none;
     padding: 0 5px 0 5px;
     font-size: .8em;
     text-align: center;
     margin: 10px 0 30px 0;
+    color: #fff;
     
     position: relative;
     top: 2px;
+}
+
+a {
+    color: #fff;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.input-text::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, .5);
 }
 
 button {
@@ -91,8 +110,10 @@ button {
     text-transform: uppercase;
     /* margin: 30px auto 30px auto; */
     
+    color: #652a9b;
+    font-weight: 600;
     display: block;
-    border: 2px solid #999;
+    border: 2px solid #fff;
     background: #fff;
     font-size: .8em;
     outline: none;
@@ -100,9 +121,9 @@ button {
 }
 
 button:hover {
-    background: #000;
+    background: #652a9b;
     color: #fff;
-    border-color: #000;
+    border-color: #652a9b;
 }
 
 button:active {
@@ -120,7 +141,7 @@ button:active {
     width: 16px;
     height: 16px;
     
-    border: 2px solid #999;
+    border: 2px solid #fff;
     transition: 0.2s all linear;
     outline: none;
     margin-right: 5px;
@@ -130,5 +151,5 @@ button:active {
 }
 
 input:checked {
-    border: 6px solid black;
+    border: 6px solid #652a9b;
 }
